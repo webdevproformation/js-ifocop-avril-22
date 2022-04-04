@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // portée des variables 
+        // const unite = "km";
+
+        function a(){
+            // les variables distance et unite sont LOCALES 
+            // je ne peux les utiliser que dans les accolades de la fonction
+            const distance = 200 ;
+            const unite = "cm";
+            const temps = 12 ;
+            const mesure = "heure"  ;
+            // permet d'utiliser des valeurs qui sont dans la fonctions pour les utiliser à l'extérieur  
+            // return unite 
+            //return [ unite , distance ]; 
+            return {
+                distance : distance ,
+                unite : unite,
+                temps : temps
+            }
+
+        }
+
+
+        const toto = a();
+        console.log(toto); // OK 
+        // console.log(unite); // KO => 
+    </script>
+</body>
+</html>
