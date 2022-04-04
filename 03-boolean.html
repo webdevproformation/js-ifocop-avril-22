@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const test = 12 > 5 ;
+        //             true
+        console.log(test);
+        const test2 = 12 > 5 && 12 < 6 ; 
+        //            true   &&    false
+        //                 false 
+
+        const loginBdd = "malik";
+        const mdpBdd = "123456"
+
+        const loginSaisie = "malik"
+        const mdpSaisie = "123456"
+        // && ET => 
+        
+        const connexionCompteGmail = loginSaisie == loginBdd && mdpSaisie == mdpBdd ;
+        //                               true                &&     true
+        //                                           true
+
+        // OU || 
+
+        const verif3 = 12 < 5 || 12 > 20 ; 
+        //              false  ||  false
+        //                  false
+
+        // true && true => true
+        // false && true => false
+        // true && false => false
+        // false && false => false
+
+        // true || true => true
+        // false || true => true
+        // true || false => true
+        // false || false => false
+
+        // mathématique logique => table des vérités
+
+        // ! NOT
+
+        const verif4 = !(12 > 5) ; 
+        //             !(  true  )
+        //             !  true  
+        //             false 
+
+        const nom = "Alain"
+
+        const isAdmin = nom == "Alain"
+        //             "Alain" == "Alain"
+        //                true
+        
+        const notAdmin = !(nom == "Alain")
+        //const notAdmin = nom != "Alain"
+
+        // opérateur de comparaison
+        // >
+        // >= attention pour supérieur ou égal le symbole suivant n'existe pas =>
+        // < 
+        // <= attention pour inférieur ou égal le symbole suivant n'existe pas =<
+        // == égal la valeur uniquement
+        // !=  différent
+
+        // === strictement égal vérifier le type et la valeur
+
+        const test10 = 4 == 4 ; // true
+        const test11 = 4 == "4" ; 
+        //              "4" == "4" ; // transtyper faire ne sorte que les variables avec le même type
+        //                 true 
+
+        const test12 = 4 === "4" ;
+        //              false 
+
+
+        const test13 = "Victor" == "Victor" ; // true
+        const test14 = "Victor" === "Victor" ; // true
+
+
+        const auteurs = ["Victor" , "Hugo"];
+        
+        const test15 = auteurs[0] == "Victor" ;  // true
+        const test16 = auteurs[0] === "Victor" ;  // true
+        
+        const objet = {
+            prenom : "Victor",
+            nom : "Hugo"
+        };
+
+        const test17 = objet.prenom == "Victor"; // true
+        const test18 = objet.prenom == auteurs[0]; // true
+        const test19 = objet.prenom === auteurs[0]; // true
+        const test20 = objet.prenom === "Victor"; // true
+    </script>
+</body>
+</html>
