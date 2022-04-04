@@ -1,0 +1,75 @@
+
+javascript 
+Langage client 
+
+
+
+<script>
+
+// commentaire monoligne
+/*
+commentaire 
+multiligne
+*/
+
+// variable 
+// distingue 5 types de variables 
+
+// string => chaine de caractère
+const auteur = "Victor Hugo";
+const auteur2 = 'Victor Hugo';
+// ES6 (version 6 de javascript)
+const auteur3 = `Victor Hugo`; // très pratique
+
+// backtick `` AltGr + 7 + Espace ` => accent grave
+
+// chiffre => number 
+
+const chiffre = 10 ; 
+const chiffre2 = 1.2 ;
+const chiffre3 = -1.2 ;
+
+const chiffre4 = 4000 ;
+const chiffre5 = 4_000 ;
+
+// boolean
+
+const verif = true ; /// mot clé à ne pas confondre avec les string 
+const test = false ; /// mot clé 
+
+
+// types primitifs => string / number / boolean 
+// 1 valeur stockée dans 1 variable 
+
+// stocker plusieurs valeurs dans une seule variable 
+// type complexe / scalaire
+
+// tableau => array 
+
+const etudiants = ["Alain" , "Bob", "Charles", "Zorro" ]; 
+const budget = [10 , 12 , -20 , 30] ; 
+const information = [true, false , true , true] ;
+
+const formation = ["Javascript" , 12 , true , []];
+
+// object => objet 
+
+const etudiant = {
+    prop : "valeur",
+    nom : "Alain",
+    age : 22 ,
+    competences : ["js", "html", "css"],
+    confirme : true ,
+    adresse : {
+        rue : "75 rue de Paris",
+        cp : 75000,
+        ville : "Paris"
+    }
+}
+
+
+
+
+</script>
+
+créer un fichier .js 

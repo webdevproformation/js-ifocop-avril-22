@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const etudiant = {
+            prop : "valeur",
+            nom : "Alain",
+            age : 22 ,
+            competences : ["js", "html", "css"],
+            confirme : true ,
+            adresse : {
+                rue : "75 rue de Paris",
+                cp : 75000,
+                ville : "Paris"
+            }
+        }
+
+        const prop = "valeur"
+        const nom = "Alain"
+        const age = 22
+        const competences = ["js", "html", "css"];
+
+        // je veux écrire dans la console du navigateur le texte suivant 
+        // résultat d'un calcul => concaténation 
+        // Alain connaît js
+        const resultat =  nom + " connaît " + competences[0]
+        console.log(resultat);
+
+        const resultat2 = etudiant.nom  + " connaît " + etudiant.competences[0]
+        console.log(resultat2);
+
+        // cas pratique créer le fichier 02-exo.html
+        // ce fichier contient une balise script 
+        // elle contient elle même la variable suivante 
+        /*
+        const etudiant = {
+            nom : "Alain",
+            adresse : {
+                rue : "75 rue de Paris",
+                cp : 75000,
+                ville : "Paris"
+            }
+        }
+        
+        // à partir de etudiant écrire dans la console => 
+        "Alain habite au 75 rue de Paris 75000 Paris"
+        */
+    </script>
+</body>
+</html>
