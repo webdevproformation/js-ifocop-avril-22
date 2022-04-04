@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 07-truthy-falsy.html
+
+        // attention pour certaines valeurs => javascript va les transformer en false 
+
+        const titre = "";
+
+        if(titre){
+        // ""
+        // false 
+
+        }
+
+        const chiffre = 0 
+        if(chiffre){
+            // false 
+        }
+
+        // 7 valeurs => "" 0 -0 false null undefined NaN => falsy 
+        // quelquesoit les autres valeurs 
+        // [ ] { } " " "a" => truthy
+
+        let total ; // undefined créer une variable sans lui donner de valeur 
+        if(total){
+
+        }
+
+        const ville = "Pantin"
+
+        if(ville == "Paris" || "Marseille"){
+          //  "Pantin" == "Paris" || "Marseille"
+          //  false || "Marseille"
+          //  false || true
+            console.log("je vis en France")
+        }else {
+            console.log("je vies à l'étranger")
+        }
+
+        const verif = 0 ; 
+
+        if(verif){
+
+        }
+
+        const tableau = [ 1, 0 , 3 ]
+
+        if(tableau[1]){
+
+        }else {
+            // ça qui est exécuté 
+        }
+
+        // && || ! ()
+        // falsy truthy 
+        console.log((1 + -+(+(+-+1))))
+        console.log((false < 1 || true > 0))
+        console.log((0 < 1 || 1 > 0))
+        console.log((0 < 1 || 1 > 0))
+    </script>
+</body>
+</html>
