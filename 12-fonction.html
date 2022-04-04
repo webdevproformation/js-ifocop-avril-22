@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // variable simple string / number / boolean
+        // variable complexe array / object 
+
+        // dans une fonction est une variable dans laquelle il est possible de stocker un ou plusieurs INSTRUCTIONS 
+
+        const a = "coucou";
+
+        function b (){
+            const auteur = "Victor Hugo";
+            const jours = ["lundi", "mardi" , "mercredi"]
+            console.log(auteur);
+        }
+        
+        // exécuter les instructions dans la variable b (type fonction) => appeler la fonction
+        b(); 
+
+        // stocker une fonction dans une variable
+        const c = function(){ // fonction anonyme 
+            const etudiant = {
+                nom : "Alain",
+                age : 12
+            };
+            console.log(etudiant.nom + " a " + etudiant.age + " ans");
+        };
+
+        c();
+
+        // version ES6 => 2015 => fonction fléchée
+        const d = () => { // arrow function
+            const formation = {
+                nom : "Javascript",
+                duree : 5 ,
+                unite : "jours"
+            }
+                // je suis une formation de 5 jours en Javascript
+            console.log(`je suis une formation de ${formation.duree} ${formation.unite} en ${formation.nom}`)
+        }
+
+        d();
+        // 
+        // this 
+
+
+    </script>
+</body>
+</html>
+
+<!--
+    Créer un nouveau fichier 13-exo.html ayant la balise <script>
+
+1/ déclarer une fonction aireCercle 
+
+2/ cette fonction dispose d'un argument rayon
+
+3/ cette fonction dispose de deux instructions :
+- déclarer la variable resultat = 3,14 * rayon * rayon
+- afficher dans la console la phrase suivante :
+l'aire d'un cercle de rayon rayon a une aire de resultat
+
+4/ exécuter la fonction aireCercle pour le rayon
+44,5
+70,43
+-->
