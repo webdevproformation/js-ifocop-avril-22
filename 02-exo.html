@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const etudiant = {
+            nom : "Alain",
+            adresse : {
+                rue : "75 rue de Paris" ,
+                cp : 75000 ,
+                ville : "Paris" ,
+            }
+        } ;
+
+        // créer une variable resultat qui stocke le texte suivant 
+        // "Alain habite au 75 rue de Paris 75000 Paris"
+        const resultat = etudiant.nom + " habite au " + etudiant.adresse.rue + " " + etudiant.adresse.cp + " " + etudiant.adresse.ville ;
+
+        // maintenant je veux afficher le contenu de la variable resultat dans la console du navigateur
+        console.log(resultat);
+
+        // afficher le résultat d'un calcul directement
+        console.log(etudiant.nom + " habite au " + etudiant.adresse.rue + " " + etudiant.adresse.cp + " " + etudiant.adresse.ville)
+    </script>
+</body>
+</html>
