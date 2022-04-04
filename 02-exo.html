@@ -26,6 +26,14 @@
 
         // afficher le résultat d'un calcul directement
         console.log(etudiant.nom + " habite au " + etudiant.adresse.rue + " " + etudiant.adresse.cp + " " + etudiant.adresse.ville)
+
+        // autre solution possible backtick
+        const resultat2 = `${etudiant.nom} habite au ${etudiant.adresse.rue} ${etudiant.adresse.cp} ${etudiant.adresse.ville}` ;
+
+        console.log(resultat2);
+
+        // autre solution
+        console.log(`${etudiant.nom} habite au ${etudiant.adresse.rue} ${etudiant.adresse.cp} ${etudiant.adresse.ville}`)
     </script>
 </body>
 </html>
