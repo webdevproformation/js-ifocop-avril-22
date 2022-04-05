@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const recettes = [
+        {nom : "frite" , prix : 10 , description : "cuire 2 min"},
+        {nom : "soupe" , prix : 20 , description : "cuire 5 min"},
+        {nom : "pizza" , prix : 12 , description : "cuire 6 min"},
+        {nom : "purée" , prix : 22 , description : "cuire 10 min"},
+    ]
+    
+    for(let i = 0 ; i < recettes.length ; i++){
+        console.log(`il faut dépenser ${recettes[i].prix} euros pour faire une ${recettes[i].nom} et le ${recettes[i].description}`)
+    }
+    </script>
+</body>
+</html>
