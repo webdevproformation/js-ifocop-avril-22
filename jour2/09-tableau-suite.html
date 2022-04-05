@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //const etudiants = [ "Alain" , "Bob" , "Céline" , "Daniel" , "Etienne" ];
+        //const activites = [ "judo" , "html" , "javascript" , "css" , "jquery" ];
+         const etudiants = [ 
+             {nom : "Alain" , activite : "judo"} , 
+             {nom : "Bob" , activite : "html"} , 
+             {nom : "Céline", activite : "javascript"} , 
+             {nom : "Daniel" , activite : "css"} , 
+             {nom : "Etienne" , activite : "jquery" }
+        ];
+
+        console.log( etudiants[1].activite) // "html"
+        console.log( etudiants[1] ) //  {nom : "Bob" , activite : "html"}
+
+        for(let i = 0 ; i < etudiants.length  ; i++){
+            console.log(`${etudiants[i].nom} fait du ${etudiants[i].activite}`)
+        }
+
+        const chiffre = 1_000; 
+
+        !function(){
+            console.log("coucou")
+        };
+        //a()
+
+    </script>
+</body>
+</html>
+
+<!--
+    créer le fichier 10-exo.html contenant une balise script
+    collection => tableau qui contient des objets
+
+    recettes = [
+        nom : "frite" , prix : 10 , description : "cuire 2 min",
+        nom : "soupe" , prix : 20 , description : "cuire 5 min",
+        nom : "pizza" , prix : 12 , description : "cuire 6 min",
+        nom : "purée" , prix : 22 , description : "cuire 10 min",
+    ]
+
+    // afficher dans la console du navigateur les textes suivants :
+    
+        il faut dépenser 10 euros pour faire une frite et le cuire 2 min
+        il faut dépenser 20 euros pour faire une soupe et le cuire 5 min
+        il faut dépenser 12 euros pour faire une pizza et le cuire 6 min
+        il faut dépenser 22 euros pour faire une purée et le cuire 10 min
+-->
