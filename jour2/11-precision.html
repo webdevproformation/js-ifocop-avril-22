@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // chiffre opération de base + - / * % **
+        const chiffre = 12 + 10 ;
+
+        // chiffre opérateur uniaire ++ += -=
+        let i = 10
+        i++ ; 
+        let j = 30 ;
+        j += 10 ; // 40 
+
+        // l'opérateur unaire  ++ / -- dispose de deux manières d'être utilisées
+
+        let a = 10 ;
+
+        const a1 = a++ ; // ++ apres la variable a1 = a + 1;
+              //                       a = a1
+        console.log(a1)// 10
+        console.log(a); // 11
+
+        let b = 12 ;
+        let b1 = ++b ;  // ++ avant la variable  b = b+ 1
+
+        console.log(b1) // 13
+        console.log(b) // 13
+
+        for(let i = 0 ; i < 10 ; i++){
+            console.log(i)
+        }
+
+        for(let i = 0 ; i < 10 ; ++i){
+            console.log(i)
+        }
+        
+
+
+
+    </script>
+</body>
+</html>
