@@ -7,6 +7,44 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        // en + de créer la variable tableau et de stocker les valeurs 
+        // javascript va transformer votre variable tableau en un objet 
+        const tableau = []
+
+        /* const tableau = {
+            value : [] ,
+            length : 0 ,
+            forEach : function(){} ,
+            // .....
+        }
+
+        */
+
+        console.log(tableau);
+
+        const jourSemaine = ["lundi", "mardi" , "mercredi" , "jeudi", "vendredi", "samedi"]
+
+        console.log(jourSemaine.length) ; 
+
+        console.log(jourSemaine[0])
+        console.log(jourSemaine[1])
+        console.log(jourSemaine[2])
+        console.log(jourSemaine[3])
+        console.log(jourSemaine[4])
+
+        for(let i = 0 ; i <= 4 ; i++){
+            console.log(jourSemaine[i])
+        }
+
+        for(let i = 0 ; i <= jourSemaine.length - 1 ; i++){ // 5
+            console.log(jourSemaine[i])
+        }
+
+        for(let i = 0 ; i < jourSemaine.length ; i++){ // 6
+            console.log(jourSemaine[i])
+        }
+
+    </script>
 </body>
 </html>
