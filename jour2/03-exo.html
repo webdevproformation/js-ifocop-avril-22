@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const rectangle = {
+            largeur : 20 ,
+            hauteur : 50,
+            calculAire(){
+                const resultat = this.largeur * this.hauteur;
+                console.log(`un rectangle de largeur ${this.largeur} et de hauteur ${this.hauteur} a une aire de ${resultat}`)
+                console.log(`un rectangle de largeur ${this.largeur} et de hauteur ${this.hauteur} a une aire de ${this.largeur * this.hauteur}`)
+            },
+            calculPerimetre(){
+                const resultat = (this.largeur + this.hauteur) * 2;
+                console.log(`un rectangle de largeur ${this.largeur} et de hauteur ${this.hauteur} a un périmètre de ${resultat}`)
+            }
+        } ;
+
+        rectangle.calculAire();
+        rectangle.calculPerimetre();
+
+
+
+        const rectangle2 = {
+            largeur : 20 ,
+            hauteur : 50,
+            calculAire : function(){
+                const resultat = this.largeur * this.hauteur;
+                console.log(`un rectangle de largeur ${this.largeur} et de hauteur ${this.hauteur} a une aire de ${resultat}`)
+            },
+            calculPerimetre: function (){
+                const resultat = (this.largeur + this.hauteur) * 2;
+                console.log(`un rectangle de largeur ${this.largeur} et de hauteur ${this.hauteur} a un périmètre de ${resultat}`)
+            }
+        }
+    </script>
+</body>
+</html>
