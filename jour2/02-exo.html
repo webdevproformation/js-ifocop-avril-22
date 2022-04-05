@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const formation = {
+            duree : 4,
+            unite : "mois",
+            matieres : ["js" , "html" ,"css", "jquery"] ,
+            description : function(){ 
+                console.log(`je suis une formation d'une durée de ${this.duree} ${this.unite}`)
+            },
+            details : function(){
+                console.log(`je vais voir ${this.matieres[0]} et ${this.matieres[1]} durant les ${this.duree} ${this.unite}`)
+                //this.matieres.slice(0,1)
+            }
+        }
+        const formation2 = {
+            duree : 4,
+            unite : "mois",
+            matieres : ["js" , "html" ,"css", "jquery"] ,
+            description(){
+                console.log(`je suis une formation d'une durée de ${this.duree} ${this.unite}`)
+            },
+            details(){}
+        }
+    </script>
+</body>
+</html>
