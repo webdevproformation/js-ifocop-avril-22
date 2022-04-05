@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const calcul = function(){
+            console.log("je suis la fonction de calcul")
+        }
+
+        const rectangle = { // stocke que des valeurs 
+            largeur : 10, // propriétés
+            hauteur : 20,
+            unite : "cm"
+        }
+        // il est aussi possible de stocker dans un objet des fonctions
+
+        const cercle = {
+            calculAire : function(){ // syntaxe classique 
+                // Pi * rayon * rayon
+                cercle.rayon;
+                console.log(this.rayon) ; 
+            } , // attention à la virgule !!!!!! 
+            calculPerimetre : function(){ // depuis 2015 version 6 de js 
+                // 2 * Pi * rayon
+                cercle.calculAire();
+                this.calculAire(); 
+            },
+            rayon : 2000 
+        }
+        // cercle contient une propriété type number
+        // contient 2 méthodes 
+        // récupérer la valeur stokée dans rayon 
+        cercle.rayon
+        cercle.calculAire()
+        cercle.calculPerimetre()
+
+    </script>
+</body>
+</html>
+
+<!--
+    créer un nouveau fichier 02-exo.html
+    qui contient une balise script 
+
+    créer un objet qui s'appelle 
+    formation : 
+    cet objet contient 3 propriétés :
+    duree : 4
+    unite : "mois"
+    matieres : ["js", "html", "css", "jquery"]
+
+    créer dans l'objet formation 2 méthodes 
+    description 
+        écrire dans la console le texte suivant 
+        "je suis une formation d'une durée de 4 mois"
+
+    details 
+        écrire dans la console le texte suivant
+        "je vais voir js et html durant les 4 mois"
+
+    // exécuter la méthode details de l'objet formation
+
+
+
+
+-->
