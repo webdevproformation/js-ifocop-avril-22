@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     const bdd = [
+  {
+    "_id": "624c2cbc91427b391063e736",
+    "longitude": 2.679557,
+    "tags": [
+      "exercitation",
+      "reprehenderit",
+      "anim",
+      "incididunt",
+      "nostrud",
+      "esse",
+      "tempor"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Marci Jones"
+      },
+      {
+        "id": 1,
+        "name": "Fran Gillespie"
+      },
+      {
+        "id": 2,
+        "name": "Graciela Fleming"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbcea2682af0379679c",
+    "longitude": -111.742241,
+    "tags": [
+      "sunt",
+      "ipsum",
+      "commodo",
+      "duis",
+      "non",
+      "est",
+      "officia"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Marianne Avery"
+      },
+      {
+        "id": 1,
+        "name": "Santos Montoya"
+      },
+      {
+        "id": 2,
+        "name": "Mindy Patrick"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbcb5cd5b5f64d22390",
+    "longitude": -49.969923,
+    "tags": [
+      "enim",
+      "est",
+      "culpa",
+      "tempor",
+      "deserunt",
+      "sit",
+      "adipisicing"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Wong Welch"
+      },
+      {
+        "id": 1,
+        "name": "Cabrera Fields"
+      },
+      {
+        "id": 2,
+        "name": "Taylor Mcpherson"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbcc55aa03b253a2200",
+    "longitude": 25.565334,
+    "tags": [
+      "tempor",
+      "qui",
+      "ipsum",
+      "aliquip",
+      "nulla",
+      "id",
+      "deserunt"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Kirsten Boyer"
+      },
+      {
+        "id": 1,
+        "name": "Ryan Carney"
+      },
+      {
+        "id": 2,
+        "name": "Elliott Harrell"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbc58d9720e00d39307",
+    "longitude": 153.959472,
+    "tags": [
+      "cillum",
+      "ad",
+      "enim",
+      "tempor",
+      "est",
+      "commodo",
+      "occaecat"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Reyes Guzman"
+      },
+      {
+        "id": 1,
+        "name": "Villarreal Ayers"
+      },
+      {
+        "id": 2,
+        "name": "Clarice Griffin"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbcf55f97b5ee0c9fec",
+    "longitude": 119.649474,
+    "tags": [
+      "ullamco",
+      "et",
+      "laborum",
+      "culpa",
+      "officia",
+      "aliquip",
+      "labore"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Fisher Woodward"
+      },
+      {
+        "id": 1,
+        "name": "Shepard Bond"
+      },
+      {
+        "id": 2,
+        "name": "Peters Barry"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbc5018d6c57e6f8d3e",
+    "longitude": 113.798517,
+    "tags": [
+      "nulla",
+      "pariatur",
+      "do",
+      "irure",
+      "culpa",
+      "dolore",
+      "aliquip"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Marilyn Clements"
+      },
+      {
+        "id": 1,
+        "name": "Gayle Bartlett"
+      },
+      {
+        "id": 2,
+        "name": "Beatriz Clark"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbc0e767dc90998cc8c",
+    "longitude": 155.839212,
+    "tags": [
+      "commodo",
+      "adipisicing",
+      "est",
+      "eiusmod",
+      "id",
+      "sunt",
+      "non"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Shawn Stuart"
+      },
+      {
+        "id": 1,
+        "name": "Cassie Chaney"
+      },
+      {
+        "id": 2,
+        "name": "Phoebe Bauer"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbc88a5b663605886bc",
+    "longitude": 95.655539,
+    "tags": [
+      "velit",
+      "ipsum",
+      "quis",
+      "consectetur",
+      "labore",
+      "culpa",
+      "dolore"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Abigail Randolph"
+      },
+      {
+        "id": 1,
+        "name": "Cheri Nichols"
+      },
+      {
+        "id": 2,
+        "name": "Renee Waters"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbc4d77c164e1fd00cc",
+    "longitude": -75.325352,
+    "tags": [
+      "duis",
+      "aute",
+      "pariatur",
+      "veniam",
+      "nostrud",
+      "sint",
+      "proident"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Myers Mcfadden"
+      },
+      {
+        "id": 1,
+        "name": "Dolores Morrison"
+      },
+      {
+        "id": 2,
+        "name": "Mejia Hatfield"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbc09c09fd0387f6619",
+    "longitude": 122.187268,
+    "tags": [
+      "amet",
+      "ipsum",
+      "proident",
+      "adipisicing",
+      "eiusmod",
+      "consectetur",
+      "tempor"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Schultz Raymond"
+      },
+      {
+        "id": 1,
+        "name": "Tina Cabrera"
+      },
+      {
+        "id": 2,
+        "name": "Gracie Duncan"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbcbf2f5bbfdfd2f1b4",
+    "longitude": -97.972735,
+    "tags": [
+      "Lorem",
+      "eiusmod",
+      "est",
+      "id",
+      "Lorem",
+      "reprehenderit",
+      "ea"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Lyons Stout"
+      },
+      {
+        "id": 1,
+        "name": "Eaton Pitts"
+      },
+      {
+        "id": 2,
+        "name": "Montgomery Reilly"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbce455853e8345a4cf",
+    "longitude": 110.217006,
+    "tags": [
+      "duis",
+      "qui",
+      "enim",
+      "consectetur",
+      "dolor",
+      "ad",
+      "veniam"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Elvira Luna"
+      },
+      {
+        "id": 1,
+        "name": "Pearson Rutledge"
+      },
+      {
+        "id": 2,
+        "name": "Terry Aguirre"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbc5b6b0aca7e7da69f",
+    "longitude": 108.134581,
+    "tags": [
+      "mollit",
+      "fugiat",
+      "eiusmod",
+      "magna",
+      "amet",
+      "quis",
+      "incididunt"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Nelson Flowers"
+      },
+      {
+        "id": 1,
+        "name": "Doyle Sears"
+      },
+      {
+        "id": 2,
+        "name": "Sophia King"
+      }
+    ]
+  },
+  {
+    "_id": "624c2cbc3b23414ce4c455f9",
+    "longitude": 37.103703,
+    "tags": [
+      "enim",
+      "qui",
+      "consequat",
+      "occaecat",
+      "ea",
+      "voluptate",
+      "laborum"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Agnes Atkinson"
+      },
+      {
+        "id": 1,
+        "name": "Evangeline Nguyen"
+      },
+      {
+        "id": 2,
+        "name": "Langley Weiss"
+      }
+    ]
+  }
+]
+
+// 
+    </script>
+</body>
+</html>

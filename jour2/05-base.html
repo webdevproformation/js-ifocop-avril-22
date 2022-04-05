@@ -30,7 +30,7 @@
     "longitude": -58.817222,
     "tags": [
       "in",
-      "officia",
+      "officia", // ici 33 
       "commodo",
       "est",
       "id",
@@ -161,7 +161,7 @@
     "address": "313 Locust Avenue, Brule, Alaska, 8138",
     "about": "Ut aliquip enim consequat aute tempor consectetur ad exercitation ipsum est fugiat. Exercitation incididunt id tempor adipisicing voluptate nostrud esse fugiat voluptate. Deserunt fugiat dolor eiusmod commodo dolore aliqua cillum minim.\r\n",
     "registered": "2021-01-03T02:15:26 -01:00",
-    "latitude": 42.479093,
+    "latitude": 42.479093, // afficher cette valeur
     "longitude": 21.940274,
     "tags": [
       "ipsum",
@@ -175,7 +175,7 @@
     "friends": [
       {
         "id": 0,
-        "name": "Ryan Waters"
+        "name": "Ryan Waters" // afficher cette valeur 
       },
       {
         "id": 1,
@@ -295,7 +295,7 @@
     "phone": "+1 (937) 523-3870",
     "address": "298 Schenectady Avenue, Hiwasse, Texas, 8812",
     "about": "Laboris exercitation quis excepteur veniam qui ullamco ex aliqua. Eiusmod duis fugiat laborum Lorem anim quis ea irure velit. Cupidatat nisi pariatur veniam do in do elit fugiat mollit minim ex sint consectetur.\r\n",
-    "registered": "2014-09-14T11:36:20 -02:00",
+    "registered": "2014-09-14T11:36:20 -02:00", // about => ligne 297 
     "latitude": 29.246262,
     "longitude": -123.871356,
     "tags": [
@@ -303,7 +303,7 @@
       "nulla",
       "dolore",
       "aliquip",
-      "consectetur",
+      "consectetur", // 306
       "ad",
       "tempor"
     ],
@@ -325,6 +325,16 @@
     "favoriteFruit": "banana"
   }
 ]
+
+console.log(baseDeDonnee[0].friends[1].name)
+console.log(baseDeDonnee[0].tags[1])
+console.log(baseDeDonnee[3].latitude)
+console.log(baseDeDonnee[3].friends[0].name)
+console.log(baseDeDonnee[6].about) // 297
+console.log(baseDeDonnee[6].tags[4]) // 306
+
+// afficher dans la console le texte suivant officia
+
     </script>
 </body>
 </html>
