@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // javascript il existe 5 types de variables 
+        const a = "bonjour";
+        const b = 12 ;
+        const c = true ;
+        const e = [1,2,3];
+        const f = { a : 1 , b : "bonjour" } 
+
+        function g (){
+            const a = 10;
+            const b = 10 ;
+            console.log(a+b)
+        }
+
+        // plus le problème est compliqué 
+        // plus on a besoin d'informations // plus on a besoin de variable 
+
+        // combinaison de tableau qui contient des objets => collections
+
+
+        const h = [
+            { id : 1 , titre : "Article 1" , contenu : "lorem ipsum" }, // 0
+            { id : 2 , titre : "Article 2" , contenu : "lorem ipsum" }, // 1
+            { id : 3 , titre : "Article 3" , contenu : "lorem ipsum" }, // 2
+            { id : 4 , titre : "Article 4" , contenu : "lorem ipsum" }, // 3
+        ]
+
+        h[3].titre
+
+        // parcourir 
+        for(let i = 0 ; i < 4 ; i += 1){
+            console.log(`${h[i].titre} - ${h[i].contenu}`)
+        }
+
+        for(let i = 0 ; i < h.length ; i += 1){
+            console.log(`${h[i].titre} - ${h[i].contenu}`)
+        }
+
+        window.document
+
+        console.log(document) // objet qui est créé automatique par Javascript 
+        // {   } plus 100 membres 
+        // .querySelector("h1")
+        // .querySelector("p")
+        // .querySelector(".introduction")
+        // 
+
+        document.querySelector("h1").innerHTML = "texte"
+    </script>
+</body>
+</html>
