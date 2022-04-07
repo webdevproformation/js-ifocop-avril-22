@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="el1"></p>
+    <p class="el2"></p>
+    <p class="el3"></p>
+    <script>
+        let i = 10 ;
+         i++ ;
+         i += 1
+         i = i + 1; 
+         document.querySelector(".el1").innerHTML = i ; // 13
+
+        let prenom = "Victor";
+        let nom = "Hugo" ;
+        let auteur = prenom + " "+ nom ;
+        //let auteur = `${prenom} ${nom}` ;
+        document.querySelector(".el2").innerHTML  = auteur
+
+        let auteurFr1 = "Victor" ;
+            auteurFr1 = auteurFr1 + " ";
+            auteurFr1 = auteurFr1 + "Hugo";
+
+        let auteurFr = "Victor" ;
+            auteurFr += " ";
+            auteurFr += "Hugo";
+    </script>
+</body>
+</html>

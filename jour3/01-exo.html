@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <script>
+        const data = [
+            { id : 1 , titre : "Article 1" , contenu : "lorem ipsum" }, // 0
+            { id : 2 , titre : "Article 2" , contenu : "lorem ipsum" }, // 1
+            { id : 3 , titre : "Article 3" , contenu : "lorem ipsum" }, // 2
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+        ]
+document.querySelector("h1").innerHTML = `Article 1 contient lorem ipsum`
+document.querySelector("h1").innerHTML = `${data[0].titre} contient ${data[0].contenu}`
+document.querySelector("h1").innerHTML = data[0].titre + " contient " + data[0].contenu
+
+document.querySelector("p").innerHTML = `${data[3].titre} contient ${data[3].contenu}`
+document.querySelector("p").innerHTML = data[3].titre +" contient " +data[3].contenu ;
+
+document.querySelector("p").innerHTML = data; 
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div><!-- important -->
+    <script>
+        const data = [
+            { id : 1 , titre : "Article 1" , contenu : "lorem ipsum" }, // 0
+            { id : 2 , titre : "Article 2" , contenu : "lorem ipsum" }, // 1
+            { id : 3 , titre : "Article 3" , contenu : "lorem ipsum" }, // 2
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+            { id : 4 , titre : "Article 4" , contenu : "set dolor" }, // 3
+        ]
+        let html = "";
+         for(let i = 0 ; i < data.length ; i++){
+            //console.log(`${data[i].titre} contient ${data[i].contenu}`)
+            html += `${data[i].titre} contient ${data[i].contenu} <br>`
+        } 
+
+        document.querySelector("div").innerHTML = html ; 
+
+        /*
+            remplir la balise div avec le contenu de la variable data 
+            remplir du html suivant 
+            <article>
+                <h2>Article 1</h2>
+                <p>lorem ipsum</p>
+            </article>
+            <article>
+                <h2>Article 2</h2>
+                <p>lorem ipsum</p>
+            </article>
+        */
+    </script>
+</body>
+</html>
