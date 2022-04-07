@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h2></h2>
+    <p></p>
+    <script>
+        let text1 = "découverte de js" ;
+         document.querySelector("h1").innerHTML = text1 ; // le ; est facultatif car js considère le saut ligne comme le symbole de fin de l'instruction 
+        document.querySelector("h1").style["text-align"] = "center";
+
+        let text2 = "sous titre"
+        document.querySelector("h2").innerHTML = text2 
+        document.querySelector("h2").style["text-align"] = "center";
+        document.querySelector("h2").style["font-size"] = "12px";
+
+        document.querySelector("p").innerHTML = "lorem ipsum"
+        document.querySelector("p").style["font-size"] = "14px";
+        document.querySelector("p").style["color"] = "blue";
+        document.querySelector("p").style["font-family"] = "sans-serif";
+
+    </script>
+</body>
+</html>
