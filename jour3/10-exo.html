@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://via.placeholder.com/200x100" alt="">
+    <p></p>
+    <script>
+        document.querySelector("img").style["border"] = "3px solid pink";
+        document.querySelector("img").style["box-shadow"] = "2px 2px 0px red";
+
+        document.querySelector("img").addEventListener("click" , function(){
+            document.querySelector("p").innerHTML = "je viens de cliquer sur l'image "
+            document.querySelector("p").style["font-size"] = "20px"
+        } )
+    </script>
+</body>
+</html>
