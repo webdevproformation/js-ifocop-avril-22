@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button></button>
+    <p></p>
+    <script>
+        document.querySelector("button").innerHTML = "je suis un bouton"
+
+        document.querySelector("button").style["border"] = "2px solid red"
+        document.querySelector("button").style["padding"] = "10px 20px"
+
+        // callback 
+        document.querySelector("button").addEventListener("click" , function(){} )
+
+        document.querySelector("button").addEventListener("click" , function(){
+            document.querySelector("p").innerHTML = "bonjour je viens de cliquer sur le bouton button"
+        } )
+    </script>
+</body>
+</html>
+<!--
+    créer un nouveau fichier 10-exo.html
+
+    <img src="https://via.placeholder.com/200x100" alt="">
+    p
+    script 
+        sélectionner img => mettre en forme bordure de 3 px solid rose 
+        sélectionner img => ombre portée 
+        
+        si je clique sur l'image => remplir le p avec le texte suivant 
+        "je viens de cliquer sur l'image "
+        et en plus le texte dans le p devra avoir une taille de police de 20px
+
+-->
