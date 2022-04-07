@@ -8,14 +8,14 @@
 </head>
 <body>
     <img src="https://via.placeholder.com/200x100" alt="">
-    <p></p>
+    <p class="el1"></p>
     <script>
         document.querySelector("img").style["border"] = "3px solid pink";
         document.querySelector("img").style["box-shadow"] = "2px 2px 0px red";
 
         document.querySelector("img").addEventListener("click" , function(){
-            document.querySelector("p").innerHTML = "je viens de cliquer sur l'image "
-            document.querySelector("p").style["font-size"] = "20px"
+            document.querySelector(".el1").innerHTML = "je viens de cliquer sur l'image "
+            document.querySelector(".el1").style["font-size"] = "20px"
         } )
     </script>
 </body>
