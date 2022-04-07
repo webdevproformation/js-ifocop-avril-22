@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+        const etudiants = [
+            { nom : "Alain" , note : 10  , url : "https://via.placeholder.com/200?text=Alain"},
+            { nom : "Béatrice" , note : 15 , url : "https://via.placeholder.com/200?text=Béatrice"},
+            { nom : "Céline" , note : 20 , url : "https://via.placeholder.com/200?text=Céline"},
+
+        ]
+        let html = "";
+        for(let i = 0 ; i < etudiants.length ; i++){
+            html += `
+                <h2>${etudiants[i].nom}</h2>
+                <img src="${etudiants[i].url}" alt="">
+                <p>a obtenu la note : ${etudiants[i].note} </p>
+            `
+        }
+        document.querySelector("div").innerHTML = html ;
+    </script>   
+</body>
+</html>
