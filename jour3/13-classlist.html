@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            /* opacity: 0; */
+            width:400px;
+            transform: translateX(-400px);
+            transition: 1s transform;
+        }
+        p.show{
+            transform: translateX(0px);
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nam voluptas amet laborum ad modi asperiores! Aperiam, accusantium ipsum labore consectetur reiciendis numquam id quidem dolore ex itaque fugiat laborum.</p>
+    <script>
+        const htmlMenu = `<button>afficher</button>`
+        document.querySelector("header").innerHTML = htmlMenu
+        
+        document.querySelector("button").addEventListener('click' , function(){
+           document.querySelector("p").classList.toggle("show")
+        })
+    </script>
+</body>
+</html>
