@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            text-align: center;
+        }
+        header a{
+            margin: 0 20px;
+        }
+        div{
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        div article{
+            width:30%;
+            text-align: center;
+            border:2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <div></div>
+    <script>
+         const menu = [
+            { libelle : "Accueil" , link : "index.html" },
+            { libelle : "Nous Contacter" , link : "contact.html" },
+            { libelle : "Login" , link : "login.html" }
+        ]
+
+        let html = "";
+        for(let i = 0; i < menu.length ; i++) {
+            html += `<a href="${menu[i].link}">${menu[i].libelle} </a>`
+        }
+        document.querySelector("header").innerHTML = html ;
+
+        // deuxième traitement
+
+        const main = [
+            {titre : "Article 1" , contenu : "lorem ipsum" , dt : "07/04/2022"},
+            {titre : "Article 2" , contenu : "lorem ipsum" , dt : "07/04/2022"},
+            {titre : "Article 3" , contenu : "lorem ipsum" , dt : "07/04/2022"},
+        ]
+        let html1 ="";
+        for(let i = 0; i < main.length ; i++) {
+            html1 += `<article>
+            <h2>${main[i].titre}</h2>
+            <p>${main[i].contenu}</p>
+            <p>publié le ${main[i].dt}</p>
+        </article>`
+        }
+        document.querySelector("div").innerHTML = html1 ;
+
+    </script>
+</body>
+</html>
