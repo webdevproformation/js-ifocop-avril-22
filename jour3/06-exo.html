@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <main></main>
+    <ul></ul>
+    <script>
+        const menu = [
+            {lien : "index.html" , text : "Home"},
+            {lien : "presentation.html" , text : "About Us"}
+        ]
+
+        const main = [
+            {titre : "diapo 1" , url : "https://via.placeholder.com/300x120?text=1"},
+            {titre : "diapo 2" , url : "https://via.placeholder.com/300x120?text=2"},
+            {titre : "diapo 3" , url : "https://via.placeholder.com/300x120?text=3"},
+            {titre : "diapo 4" , url : "https://via.placeholder.com/300x120?text=4"},
+        ]
+
+        // le menu
+        let htmlHeader = "";
+        for(let i = 0 ; i < menu.length ; i++){
+            htmlHeader += `<a href="${menu[i].lien}">${menu[i].text}</a>`
+        }
+        document.querySelector("header").innerHTML = htmlHeader;
+
+        // le centrale
+        let htmlMain = "";
+        for(let i = 0 ; i < main.length ; i++){
+            htmlMain += `<img src="${main[i].url}" alt="${main[i].titre}">`
+        }
+        document.querySelector("main").innerHTML = htmlMain;
+
+        // le ul
+        let htmlUl = "";
+        for(let i = 0 ; i < menu.length ; i++){
+            htmlUl += `<li>${menu[i].text}</li>`
+        }
+        document.querySelector("ul").innerHTML = htmlUl;
+
+    </script>
+</body>
+</html>
