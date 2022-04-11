@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="el1">
+        <button>Action1</button>
+    </div>
+    <div class="el2"></div>
+    <div class="el3"></div>
+    <div class="el4"></div>
+    <div class="el5"></div>
+    <div class="el6"></div>
+    <script>
+        document.querySelector(".el2").innerHTML = `<button>Action2</button>`
+
+        const html  = `<button>Action3</button>`
+        document.querySelector(".el3").innerHTML = html ;
+        
+        let html2 = `<button style="border:2px solid blue">`
+            html2 += `Action4`
+            html2 += `</button>`
+        document.querySelector(".el4").innerHTML = html2 ;
+        
+        //
+         document.querySelector(".el5").innerHTML = `<p>Bonjour</p><p>les amis</p>`   
+    
+         const data = ["Bonjour" , "les amis"]
+         let html3  = "" ;
+         for(let i = 0 ; i < data.length ; i++){
+            html3 += `<p>${data[i]}</p>`
+         }
+         console.log(html3)
+         document.querySelector(".el6").innerHTML = html3
+
+
+    </script>
+</body>
+</html>
