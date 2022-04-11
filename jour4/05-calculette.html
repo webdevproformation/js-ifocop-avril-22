@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            display: flex;
+            width: 100px;
+            
+        }
+        button{
+            margin: 2px;
+            flex: 1;   
+        }
+        h2{
+            font-size: 0.9em;
+            text-align: center;
+            flex: 1; 
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div>
+        <button class="btn1">1</button>
+        <button class="btn2">2</button>
+        <button class="btn3">3</button>
+    </div>
+    <div>
+        <button class="btn4">4</button>
+        <button class="btn5">5</button>
+        <button class="btn6">6</button>
+    </div>
+    <div>
+        <button class="btn7">7</button>
+        <button class="btn8">8</button>
+        <button class="btn9">9</button>
+    </div>
+    <div>
+        <button class="btn0">0</button>
+    </div>
+    <div>
+        <h2>opérations</h2>
+    </div>
+    <div>
+        <button class="ope0">+</button>
+        <button class="ope1">-</button>
+        <button class="ope2">*</button>
+        <button class="ope3">/</button>
+    </div>
+    <div>
+        <h2>résultat</h2>
+    </div>
+    <div>
+        <button class="egal">=</button>
+    </div>
+    <div>
+        <button class="clear">clear</button>
+    </div>
+    
+    <div class="resultat">
+    </div>
+    
+    <script>
+        /* document.querySelector(".btn1").addEventListener("click", function(){
+            console.log(document.querySelector(".btn1").innerHTML)
+        }) */
+        // chiffre de la calculatrice
+        for(let i = 0 ; i <= 9 ; i++){
+            document.querySelector(`.btn${i}`).addEventListener("click", function(){
+                console.log(document.querySelector(`.btn${i}`).innerHTML)
+                document.querySelector(".resultat").innerHTML += document.querySelector(`.btn${i}`).innerHTML
+            })
+        }
+        // opérateurs de la calculatrice
+        for(let i = 0 ; i <= 3 ; i++){
+            document.querySelector(`.ope${i}`).addEventListener("click" , function(){
+                document.querySelector(".resultat").innerHTML +=document.querySelector(`.ope${i}`).innerHTML
+            })
+        }
+
+        document.querySelector(".egal").addEventListener("click", function(){
+            document.querySelector(".resultat").innerHTML = eval(document.querySelector(".resultat").innerHTML)
+        })
+
+        document.querySelector(".clear").addEventListener("click", function(){
+            document.querySelector(".resultat").innerHTML = ""
+        })
+
+
+    </script>
+</body>
+</html>
