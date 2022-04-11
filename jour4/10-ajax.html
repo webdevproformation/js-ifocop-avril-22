@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="el1"></div>
+    <script>
+        //const formation = 
+
+        fetch("./10-db.json") // requête ajax 
+        .then( reponse => reponse.json()) // reponse entête => uniquement le corps
+        .then( formation => { // corps réponse 
+            let html = "";
+            for(let i = 0 ; i < formation.length ; i++ ){
+                html += `<p> j'ai suivi un cours de ${formation[i].matiere} d'une durée de ${formation[i].duree} jours</p>`;
+            }
+            document.querySelector(".el1").innerHTML = html ;
+        })
+    
+    </script>
+</body>
+</html>

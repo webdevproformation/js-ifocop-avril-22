@@ -1,0 +1,5 @@
+[
+    { "matiere" : "Js" , "duree" : 5  } ,
+    { "matiere" : "html css" , "duree" : 5  } ,
+    { "matiere" : "bootstrap" , "duree" : 1  }
+]

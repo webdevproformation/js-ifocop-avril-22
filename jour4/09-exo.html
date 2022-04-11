@@ -27,7 +27,6 @@
             e.preventDefault();
             const login = document.querySelector(".login").value
             const password = document.querySelector(".password").value
-
             document.querySelector(".resultat").innerHTML = `${login} - ${password}`
             if(login == bdd[0].login && password == bdd[0].password){
                 document.querySelector(".resultat").innerHTML = "authenfication réussie"
@@ -44,3 +43,7 @@
     </script>
 </body>
 </html>
+
+<!--
+    10-ajax.html
+-->
