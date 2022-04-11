@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="el1"></div>
+    <script>
+    const formation = [
+        { matiere : "Js" , duree : 5  } ,
+        { matiere : "html css" , duree : 5  } ,
+        { matiere : "bootstrap" , duree : 1  }
+    ]
+    let html = "";
+    for(let i = 0 ; i < formation.length ; i++ ){
+        html += `<p> j'ai suivi un cours de ${formation[i].matiere} d'une durée de ${formation[i].duree} jours</p>`
+    }
+    document.querySelector(".el1").innerHTML = html ;
+    </script>
+</body>
+</html>
