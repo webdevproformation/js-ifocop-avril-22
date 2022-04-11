@@ -1,0 +1,6 @@
+[
+    { "id" : 1 , "titre" : "Article 1" , "contenu" : "lorem ipsum" }, 
+    { "id" : 2 , "titre" : "Article 2" , "contenu" : "lorem ipsum" }, 
+    { "id" : 3 , "titre" : "Article 3" , "contenu" : "lorem ipsum" }, 
+    { "id" : 4 , "titre" : "Article 4" , "contenu" : "set dolor" } 
+]
