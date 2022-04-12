@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<articles>
+    <article>
+        <id>1</id>
+        <titre>Article 1</titre>
+        <contenu>lorem ipsum</contenu>
+    </article>
+    <article>
+        <id>2</id>
+        <titre>Article 2</titre>
+        <contenu>lorem ipsum</contenu>
+    </article>
+    <article>
+        <id>3</id>
+        <titre>Article 3</titre>
+        <contenu>lorem ipsum</contenu>
+    </article>
+    <article>
+        <id>4</id>
+        <titre>Article 4</titre>
+        <contenu>lorem ipsum</contenu>
+    </article>
+</articles>
