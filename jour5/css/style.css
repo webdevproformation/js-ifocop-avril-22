@@ -1,0 +1,20 @@
+.img-responsive{
+    animation: 2s apparition-gauche;
+}
+@keyframes apparition-gauche {
+    from{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+section{
+    animation: 2s apparition-droite;
+}
+@keyframes apparition-droite {
+    from{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+/* register
+credentials */
