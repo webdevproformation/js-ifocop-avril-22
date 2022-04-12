@@ -1,0 +1,10 @@
+[
+    { "titre" : "premier article " , "contenu" : "lorem ipsum" , "id" : 1 , "img" : "https://source.unsplash.com/random/400x200" },
+    { "titre" : "article2" , "contenu" : "lorem ipsum" , "id" : 2 , "img" : "https://source.unsplash.com/random/400x201" },
+    { "titre" : "article3" , "contenu" : "lorem ipsum" , "id" : 3 , "img" : "https://source.unsplash.com/random/400x202" },
+    { "titre" : "article4" , "contenu" : "lorem ipsum" , "id" : 4 , "img" : "https://source.unsplash.com/random/400x203" },
+    { "titre" : "article5" , "contenu" : "lorem ipsum" , "id" : 5 , "img" : "https://source.unsplash.com/random/400x204" },
+    { "titre" : "article6" , "contenu" : "lorem ipsum" , "id" : 6 , "img" : "https://source.unsplash.com/random/400x205" },
+    { "titre" : "article7" , "contenu" : "lorem ipsum" , "id" : 7 , "img" : "https://source.unsplash.com/random/400x206" },
+    { "titre" : "article8" , "contenu" : "lorem ipsum" , "id" : 8 , "img" : "https://source.unsplash.com/random/400x207" }
+]

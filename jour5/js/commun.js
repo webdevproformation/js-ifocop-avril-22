@@ -30,3 +30,22 @@ const htmlFooter = `
 `;
 document.querySelector("footer").innerHTML = htmlFooter ;
 
+function genererArticles(data){
+    let html = ""
+    for(let i = 0 ; i < data.length ; i++){
+        html += `
+            <article class="col-4 mb-4">
+                <div class="card">
+                    <h2 class="card-header">${data[i].titre}</h2>
+                    <img src="${data[i].img}" alt="" loading="lazy">
+                    <p class="card-body">${data[i].contenu}</p>
+                    <div class="card-footer">
+                        <a href="single.html?id=${data[i].id}" class="btn btn-success btn-sm">
+                            lire la suite ...
+                        </a>
+                    </div>
+                </div>
+            </article>`
+    }
+    return html ;
+}

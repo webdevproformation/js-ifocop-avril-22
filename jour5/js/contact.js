@@ -14,7 +14,7 @@ const contactHtml = `
             <input type="submit" class="btn btn-outline-primary">
         </div>
     </form>
-    <div class="reponse"></div> 
+    <div class="reponse"></div>
 `
 document.querySelector("main").innerHTML = contactHtml; 
 
