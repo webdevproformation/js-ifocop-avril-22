@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p><!-- eq(0) / first() -->
+    <p></p><!-- eq(1) -->
+    <p></p><!-- eq(2) -->
+    <p></p><!-- eq(3) / last()-->
+    <div>
+        <h1>titre 1</h1>
+        <ul>
+            <li></li><!-- premier li -->
+            <li></li>
+        </ul>
+        <ul>
+            <li></li><!-- premier li -->
+            <li></li>
+        </ul>
+    </div>
+    <div>
+        <h2>coucou les amis</h2>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+   <script>
+       // $("p").html("premier p")
+       //  .first() .eq() .last() .find()
+
+       $("p").first().html("premier p")
+       $("p").last().html("dernier p")
+       $("p").eq(1).html("je suis le 2ème p") //eq() equal => égal
+       $("p").eq(2).html("je suis le 3ème paragraphe")
+
+       // dans la balise div recherche le 1er li 
+       // modifier une balise qui est DANS une autre 
+       $("div").find("li").first().html("je suis le 1er li")
+       $("div").find("li").last().html("je suis le dernier élément dans la liste")
+
+       $("div").find("ul").find("li").first().html("je suis le 1er li ")
+       $("div").find("ul").find("li").eq(1).html("je suis le last li ")
+       $("div").find("ul").find("li").eq(2).html("je suis le last li ")
+       $("div").find("ul").find("li").eq(3).html("je suis le last li ")
+   </script>
+</body>
+</html>
