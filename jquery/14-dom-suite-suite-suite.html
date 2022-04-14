@@ -19,7 +19,9 @@
         $("img").first().addClass("diapo")
         $("img").wrapAll(`<div class="diaporama">`)
         const styleDiaporama = {
-            "border" : "2px solid black",
+            border : "2px solid black",
+            "border-radius" : 5 , // guillemet OBLIGATOIRE
+            borderRadius : 5 , // sans guillemet MAIS camelCase
             display : "flex",
             width : 400 ,
             overflowX:"scroll"
