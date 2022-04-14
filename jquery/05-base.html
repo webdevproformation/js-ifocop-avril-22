@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <p class="info"></p>
+    <p id="detail"></p>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // $("h1") === document.querySelector("h1")
+        // $(".info") === document.querySelector(".info")
+        // $("#detail") === document.querySelector("#detail")
+
+        // chainage
+        // modifier le html et le css 
+        $("h1").html("toto").css("text-align", "center").css("color", "red")
+
+        $("h1").html("toto") 
+               .css("text-align", "center") 
+               .css("color", "red")  // 1 seule instruction mais plus lisible !!! 
+
+
+        // utf8 => comment le disque dur doit stocker les caractères 
+
+        // boucle $()
+        // 10h50 bonne pause @ toute suite !!!!!!!!!!!!!!!!!!!!
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // javascript classique
+        // remplir h1 avec du texte et le mettre en rouge
+        //document.querySelector("h1").innerHTML = "je suis une titre"
+        //document.querySelector("h1").style["color"] = "red"
+
+        // avec jQuery 
+        $("h1").html("je suis une titre").css("color", "red")
+
+        // document.querySelector() => $()
+        // chainage pas besoin de répéter document.querySelector() deux fois
+        // innerHTML => .html() 
+        // style["color"] = "red" => .css("color", "red")
+    </script>
+</body>
+</html>
+<!--
+    créer le fichier 04-exo.html
+    h1
+    h2 
+    installer jquery
+    remplir la balise h1 avec le texte "découverte de jquery" et centrer ce texte
+    remplir la balise h2 avec le texte "write less do more" et taille de police de 20px
+-->
