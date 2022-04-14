@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <section>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <ol class="jour">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <ol class="annee">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </section>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // plusieurs solutions
+        $("ul li").first().html("jquery")
+        $("li").first().html("jquery")
+        $("ul").find("li").first().html("jquery")
+        $(".container").find("section")
+                       .find("ul")
+                       .find("li")
+                       .first()
+                       .html("jquery")
+        
+        // question 2
+        $("ul li").eq(1).html("bootstrap")
+        $("li").eq(1).html("bootstrap")
+
+        // question 3
+        $(".jour li").html("02/12/2019")
+        $("ol").first().find("li").html("02/12/2019")
+
+        // question 4
+        $("ol").last().find("li").first().html("bonjour")
+        $(".annee li").first().html("bonjour")
+
+        // question 5
+        $("ol").last().find("li").last().html("final")
+        $(".annee li").last().html("final")
+
+        // mise en forme bonus
+        $("section")
+            .css("display", "flex")
+            .css("justify-content" , "space-between")
+            .css("width", "90%")
+            .css("margin", "0 auto")
+
+        const miseEnforme = {
+            display : "flex",
+            "justify-content" : "space-between",
+            width : "90%",
+            margin : "0 auto"
+        }
+        $("section").css(miseEnforme)
+    </script>
+</body>
+</html>
