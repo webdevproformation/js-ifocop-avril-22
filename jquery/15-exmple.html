@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- début wrapAll()-->
+        <img src="https://source.unsplash.com/random/200x100" alt="">
+        <img src="https://source.unsplash.com/random/200x101" alt="">
+        <img src="https://source.unsplash.com/random/200x102" alt="">
+        <img src="https://source.unsplash.com/random/200x103" alt="">
+        <img src="https://source.unsplash.com/random/200x104" alt="">
+    <!-- fin wrapAll() -->
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $("img").first().addClass("diapo")
+        //$("img:nth-child(2),img:nth-child(3), img:nth-child(4), img:nth-child(5)").wrapAll(`<div class="diaporama">`)
+            
+        $("img:not(:first-child)").wrapAll(`<div class="diaporama">`)
+        const styleDiaporama = {
+            border : "2px solid black",
+            "border-radius" : 5 , // guillemet OBLIGATOIRE
+            borderRadius : 5 , // sans guillemet MAIS camelCase
+            display : "flex",
+            width : 400 ,
+            overflowX:"scroll"
+        }
+        $(".diaporama").css(styleDiaporama)
+    </script>
+</body>
+</html>
