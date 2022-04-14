@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .onglet{
+            width:700px;
+            margin: 0 auto;
+        }
+        button{
+            font-size: 0.9em;
+            padding:0.9em 1.4em;
+            margin-right: 10px;
+            background: grey;
+            color: white;
+            transition: 1s background;
+            border-radius: 5px;
+        }
+        button.actif{
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <section class="onglet">
+        <button>Overview</button>
+        <button>API</button>
+        <div>
+            <h1>Lorem, ipsum dolor.</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, sit.</p>
+        </div>
+        <div>
+            <h1>Lorem, API</h1>
+            <hr>
+        </div>
+    </section>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $("div").css("display", "none")
+        $("div").first().css("display", "block")
+        $("button").first().addClass("actif")
+
+        $("button").on("click", function(){
+            const index = $(this).index();
+            $("div").css("display", "none")
+            $("div").eq(index).css("display", "block")
+            $("button").removeClass("actif")
+            $(this).addClass("actif")
+        })
+    </script>
+</body>
+</html>
