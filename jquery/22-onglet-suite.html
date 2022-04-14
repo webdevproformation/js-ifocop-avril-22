@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .onglet{
+            width:400px;
+            margin: 0 auto;
+        }
+        .onglet .button{
+            display: flex;
+            justify-content: space-between;
+        }
+        .onglet .button img{
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="onglet">
+        <div>
+            <img src="https://source.unsplash.com/random/400x200" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam!</p>
+        </div>
+        <div>
+            <img src="https://source.unsplash.com/random/400x201" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam!</p>
+        </div>
+        <div>
+            <img src="https://source.unsplash.com/random/400x202" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, magnam!</p>
+        </div>
+        <section class="button">
+            <img src="https://source.unsplash.com/random/400x200" alt="">
+            <img src="https://source.unsplash.com/random/400x201" alt="">
+            <img src="https://source.unsplash.com/random/400x202" alt="">
+        </section>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        /* $(".onglet > div").css("display", "none")
+        $(".onglet > div").first().css("display" , "block") */
+
+        $(".onglet > div").css("display", "none")
+                         .eq(0).css("display" , "block")
+
+        /* $(".button img").eq(0).on("click" , function(){
+            $(".onglet > div").css("display", "none")
+                             .eq(0).css("display" , "block")
+        })              
+        $(".button img").eq(1).on("click" , function(){
+            $(".onglet > div").css("display", "none")
+                         .eq(1).css("display" , "block")
+        })   
+        $(".button img").eq(2).on("click", function(){
+            $(".onglet > div").css("display", "none")
+                         .eq(2).css("display" , "block")
+        }) */
+
+        $(".button img").on("click", function(){
+            const id = $(this).index()
+            $(".onglet > div").css("display", "none")
+                         .eq(id).css("display" , "block")
+        })
+        
+    </script>
+
+</body>
+</html>
