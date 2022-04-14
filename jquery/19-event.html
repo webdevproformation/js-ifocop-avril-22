@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Action</button>
+    <button>Action</button>
+    <button>Action</button>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // js classique
+        document.querySelector("button").addEventListener("click" , function(){})
+
+        // premier syntaxe dans jquery
+        $("button").first().click(function(){})
+
+        // deuxième syntaxe dans jquery
+        $("button").eq(1).on("click" , function(){})
+
+    </script>
+</body>
+</html>
+<!--
+    cas pratique créer le fichier 20-exo.html
+    deux boutons et p 
+
+    installer jquery
+    si vous cliquez sur le 1er bouton => remplir le p avec le texte suivant
+    "j'ai cliqué sur le 1er p"
+
+    si vous cliquez sur le 1er bouton => remplir le p avec le texte suivant
+    "j'ai cliqué sur le 2ème p"
+-->
