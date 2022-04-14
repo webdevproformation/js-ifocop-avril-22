@@ -18,8 +18,12 @@
         </div>
         `)
         $("span").first().addClass("first")
-        $("span").eq(1).attr("id", "second")
+        $("span").eq(1).attr("id", "second") // la méthode n'est pas addId()
         $("span").last().attr("id" , "last").addClass("final")
+        $("span").last().attr("id" , "last").attr( "class","final")
+
+        const val = $("div").attr("class") // récupérer la valeur
+        console.log(val)
     </script>
 </body>
 </html>
