@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>bonjour</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // remplir les 4 p avec le texte => lorem ipsum 
+        // js classique
+        document.querySelector("p") // uniquement la première balise p
+        const p = document.querySelectorAll("p") // tous les p de la page
+        console.log(p) //contient un tableau qui va avoir tous les p de la page 
+
+        // solution 1 en js de base 
+        p[0].innerHTML = "lorem ipsum"
+        p[1].innerHTML = "lorem ipsum"
+        p[2].innerHTML = "lorem ipsum"
+        p[3].innerHTML = "lorem ipsum"
+
+        // solution 2 en js de base
+        for(let i = 0 ; i < p.length ; i++){
+            p[i].innerHTML = "lorem ipsum"
+        }
+
+        // solution avec jquery
+        // $("") => fait automatiquement une boucle 
+        $("p").html("lorem ipsum avec jquery")
+
+    </script>
+</body>
+</html>
