@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>btn 1</button>
+    <button>btn 2</button>
+    <button>btn 3</button>
+    <p></p>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $("button").first().click(function(){
+            $("p").text("j'ai cliqué sur le 1er p")
+        })
+        $("button").eq(1).on( "click",function(){
+            $("p").text("") // vider le contenu dans la balise p
+        })
+
+        $("button").last().on("click", function(){ // associer au dernier bouton dans la page un évèmenent au click
+            const textDansLeP = $("p").html() // récupérer le texte dans p
+            if(textDansLeP == ""){ // si le texte est vide
+                $("p").html("du texte") // remplir p
+            }else { // sinon
+                $("p").html("") // vider le contenu dans la balise p
+            }
+        })
+    </script>
+</body>
+</html>
