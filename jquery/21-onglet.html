@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .onglet{
+            width:350px;
+            margin: 0 auto;
+            border:2px solid red;
+            border-radius: 5px;
+        }
+        .onglet p {
+            padding : 5px 0px;
+            border:2px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <div class="onglet">
+        <button>Onglet 1</button>
+        <button>Onglet 2</button>
+        <button>Onglet 3</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam delectus laudantium blanditiis qui nostrum similique optio eius eveniet, provident ullam impedit. Quasi omnis exercitationem vel numquam totam. Qui, consequuntur!</p>
+        <p>Velit perferendis itaque culpa sed! Corporis excepturi vitae sequi adipisci mollitia saepe, aspernatur dolorem, molestiae distinctio vel unde asperiores. Debitis consequatur voluptatibus voluptatum recusandae aliquid impedit mollitia, similique velit nemo?</p>
+        <p>Molestiae architecto laudantium hic illo! Placeat sunt non facere libero, itaque totam voluptate ad atque explicabo fugiat mollitia earum distinctio eligendi iure pariatur repellendus recusandae sint rerum error velit corrupti!</p>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // pour tous les p => masquer tous les p sauf le 1er
+        $("p").css("display", "none").first().css("display", "block")
+        $("button").on("click" , function(el, index){
+            const id = $(this).index()
+            $("p").css("display", "none").eq(id).css("display", "block")
+        })
+    </script>
+    
+</body>
+</html>
