@@ -28,7 +28,7 @@
             <td>Perspiciatis, doloremque!</td>
             <td>Doloremque, mollitia.</td>
         </tr>
-        <tr>
+        <tr class="last">
             <td>Lorem, ipsum.</td>
             <td>Recusandae, at.</td>
             <td>Sapiente, hic.</td>
@@ -38,6 +38,7 @@
     <script>
         $("tr").eq(1).css("background-color", "green")
         $("tr").last().css("background-color", "red")
+        $(".last").css("background-color", "red")
         $("td").eq(7).css("background-color", "pink")
     </script>
 </body>
