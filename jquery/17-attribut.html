@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <a href=""></a>
+    <img src="" alt="">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        // .first() .last() .eq() .find()
+        // .html() text() after() before() prepend() append() wrapAll()
+        // addClass() removeClass() css() attr()
+        $("p").addClass("toto").html("je suis un texte")
+        $("p").last().removeClass("toto")
+        $("p").eq(1).attr("id" , "deuxieme")
+        $("a").text("lien vers google")
+              .attr("href", "https://google.fr")
+              .attr("target", "_blank")
+        $("img").attr("src", "https://source.unsplash.com/random/200x104")
+                .attr("alt", "je suis une image factice")
+                .attr("class" , "miniature") // addClass("miniature")
+        // rdv 14h55
+    </script>
+</body>
+</html>
+<!--
+    cas pratique : créer le fichier 18-exo.html
+    <nav>
+
+    installé jquery
+
+    remplir la balise nav avec le html suivant
+    <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    sélectionner la première balise span => ajouter la class first
+    sélectionner la deuxième balise span => ajouter la id second
+    sélectionner la dernier balise span => ajouter la id last et class final
+
+-->
