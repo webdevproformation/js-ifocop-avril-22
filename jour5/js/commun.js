@@ -30,6 +30,10 @@ const htmlFooter = `
 `;
 document.querySelector("footer").innerHTML = htmlFooter ;
 
+function more(text , nbmot = 20){
+    return text.split(" ").slice(0, nbmot).join(" ") + " ..."
+}
+
 function genererArticles(data){
     let html = ""
     for(let i = 0 ; i < data.length ; i++){
@@ -38,7 +42,7 @@ function genererArticles(data){
                 <div class="card">
                     <h2 class="card-header">${data[i].titre}</h2>
                     <img src="${data[i].img}" alt="" loading="lazy">
-                    <p class="card-body">${data[i].contenu}</p>
+                    <p class="card-body">${more(data[i].contenu , 25)}</p>
                     <div class="card-footer">
                         <a href="single.html?id=${data[i].id}" class="btn btn-success btn-sm">
                             lire la suite ...
