@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- AVANT before()-->
+    <p><!-- html() ou text()--></p>
+    <!-- APRES after() -->
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script>
+        $("p").html("j'écris dans la balise p")
+        // avant la balise p je veux écrire une balise <h1>le titre</h1>
+       // $("p").before("<h1>le titre</h1>")
+        $("p").after("<h2>je suis le titre après</h2>")
+
+        // je veux ajouter avec jquery un menu AVANT le p
+
+        $("p").first().before(`<ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+        </ul>`)
+        // puissant et logique 
+    </script>
+</body>
+</html>
